@@ -56,7 +56,7 @@ body {
     text-align: center;
 }
 
-img {
+.logo-pic {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -90,42 +90,121 @@ img {
 
 .landing .bold-text {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: #fff;
 }
 
 .title {
-    font-size: 3rem;
-    text-decoration: underline;
-    margin-bottom: 2%;
+    font-size: 2.3rem;
+    margin-bottom: 5%;
+    color: #3480d1;
 }
 
 .text {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #088a2d;
     width: 100%;
     padding: 5%;
-    padding-top: 0%;
     margin: 0 auto;
     border: 2px solid black;
-    border-radius: 5%;
+    border-radius: 20px;
     margin-top: 5%;
 }
+
+.text-dec {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-dec div {
+    min-width: 20%;
+    height: 2px;
+    background-color: #3480d1;
+}
+
+.capsule-upper {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #57de4e;
+}
+
+.capsule-lower {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #3480d1;
+}
+
 footer {
     color: #3480d1;
+}
+
+.picture {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.3) 5px 15px 30px 20px;
+    object-fit: cover;
+    animation: float 1s ease-in-out alternate infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+
+    /* For mobile phone */
+    .title {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .landing .bold-text {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 410px) and (max-width: 550px) {
 
     /* For mobile phone */
-    .title { font-size: 2rem; }
-    .text { font-size: 1.5rem; }
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .landing .bold-text {
+        font-size: 2.3rem;
+    }
 }
 
 @media screen and (max-width: 410px) {
 
     /* For mobile phone */
-    .title { font-size: 1.5rem; }
-    .text { font-size: 1.2rem; }
-    .landing .bold-text { font-size: 2.5rem; }
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .landing .bold-text {
+        font-size: 2rem;
+    }
 }

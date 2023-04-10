@@ -40,17 +40,8 @@
     }
 }
 
-.brand-name {
-    font-size: 3rem;
-    text-decoration: none;
-    color: #3480d1;
-    font-weight: bold;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+nav {
+    width: 100%;
 }
 
 body {
@@ -63,7 +54,22 @@ body {
     position: relative;
     align-items: center;
     text-align: center;
-    padding-top: 1%;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    color: #3480d1;
+    text-decoration: none;
+}
+
+.nav-item {
+    margin-left: 35px;
 }
 
 .landing-cover {
@@ -84,7 +90,7 @@ body {
 
 .landing .bold-text {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
 }
 
@@ -101,34 +107,25 @@ body {
     padding: 5%;
     padding-top: 0%;
     margin: 0 auto;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border: 2px solid black;
+    border-radius: 5%;
     margin-top: 5%;
 }
 footer {
     color: #3480d1;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 800px) {
-
-    /* For tablets */
-    .title { font-size: 2rem; }
-    .text { font-size: 1.5rem; }
-    .brand-name { font-size: 2.5rem; }
-}
-
 @media screen and (min-width: 410px) and (max-width: 550px) {
 
     /* For mobile phone */
-    .title { font-size: 1.6rem; }
-    .text { font-size: 1.2rem; }
-    .brand-name { font-size: 2rem; }
+    .title { font-size: 2rem; }
+    .text { font-size: 1.5rem; }
 }
 
 @media screen and (max-width: 410px) {
 
     /* For mobile phone */
-    .title { font-size: 1.3rem; }
-    .text { font-size: 1rem; }
-    .brand-name { font-size: 1.5rem; }
+    .title { font-size: 1.5rem; }
+    .text { font-size: 1.2rem; }
+    .landing .bold-text { font-size: 2.5rem; }
 }
